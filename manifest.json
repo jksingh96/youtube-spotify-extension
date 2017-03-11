@@ -1,7 +1,7 @@
 {
     "name": "YouTube to Spotify",
     "description": "Open up songs on YouTube in the Spotify app.",
-    "version": "0.1",
+    "version": "1.0",
     "browser_action": {
         "default_icon": "icon.png"
     },
@@ -12,7 +12,7 @@
             "https://www.youtube.com/*"
             ],
         "js": ["jquery.js","content.js"],
-        "run_at": "document_end"         // pay attention to this line
+        "run_at": "document_end"         
         }
     ], 
     "manifest_version":2
