@@ -10,7 +10,7 @@ chrome.runtime.onMessage.addListener(
             var finalString = punctuationless.replace(/\s{2,}/g," ");
             
             $.get( "https://api.spotify.com/v1/search?query="+finalString+"&type=track&offset=0&limit=1", function( data ) {
-                $("#eow-title").append("<a id='spotifylink' style='color: green' href='" + data.tracks.items[0].uri+ "'><b>LISTEN ON SPOTIFY</b></a>")
+                $("#eow-title").append("<a id='spotifylink' style='color: green' href='" + data.tracks.items[0].uri+ "'><img width=100 height=25 src='http://i.imgur.com/IB44OmJ.png'></a>")
             });
 
         } 
